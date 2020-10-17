@@ -13,9 +13,11 @@ P=775 #hPa
 f=2.7 #hPa
 r_0=15*10**7 #nm
 long_0=550 #nm
+ang=np.linspace(0,60,5) #zenithal angle [deg]
+
 ##############################################################################
 lambd=[]
-print('This code run the Alexei V.Filippenko\'s model for atmospheric differential refraction adding the seeing efect in case of a split of 1.8 arcsec in diameter.\n The atmospheric differential refraction as a function of wavelenght is calculated for the condictions typical of major optical observatories. ')
+print('This code run the Alexei V.Filippenko\'s model for atmospheric differential refraction adding the seeing efect in case of a slit of 1.8 arcsec in diameter.\n The atmospheric differential refraction as a function of wavelenght is calculated for the condictions typical of major optical observatories. ')
 print('See: THE IMPORTANCE OF ATMOSPHERIC DIFFERENTIAL REFRACTION IN SPECTROPHOTOMETRY. 1982 ')
 
 KEY=input('\n->Type Ex for run an example or  press \'any key\' to introduce wavelenghts in [nm] ...')
@@ -86,7 +88,6 @@ def alpha(long_onda,r_0,long_0,ang):
 	return( 1.2*206265*long_onda/r0(long_onda,r_0,long_0,ang)  )
 
 
-ang=np.linspace(0,60,5) #distancia cenital. No vale para 80
 Buf=[]
 buf=0
 print('Zenith distance values in degrees')
@@ -157,7 +158,7 @@ while scaleSTOP!='no':
 	ax.set_ylabel('$\Delta R (arcsec)$',fontsize=30); ax.set_xlabel('Z [deg]',fontsize=30)
 	plt.title('Atmospheric dispersion on different $\lambda$',fontsize=30)
 	plt.grid(True);
-	plt.text(0,1,'Split (D=1.8 arsec)',fontsize=20)
+	plt.text(0,1,'Slit (D=1.8 arsec)',fontsize=20)
 	mng = plt.get_current_fig_manager();mng.resize(*mng.window.maxsize())
 	plt.show() ; plt.close()
 	scaleSTOP='Reset'
