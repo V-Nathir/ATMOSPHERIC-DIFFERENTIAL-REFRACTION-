@@ -128,7 +128,7 @@ for i in range(len(Buf2)):
 
 input('\n ||WARNING|| \n'+
 	'It is possible that for resolution reasons the graphics may not scale properly.'+ 
-	'The dotted line of the first wavelength serves as a reference for the diameters\n You can adjust the plot changing SCALE value after close the plot. \n See the Ex case\n'+
+	'The dotted line serves as a reference for the diameters (seeing disk)\n You can adjust the plot changing SCALE value after close the plot. \n See the Ex case\n'+
 	'||PRESS ANY KEY||')
 scaleSTOP='yes'
 SCALE=110
