@@ -11,3 +11,6 @@ The parameters must be entered : wavelength in nm, pressure in hPa, f (the water
 The program is responsible for entering it in the appropriate units for the equations.  
 
 Instead of using 500 nm as a reference in equation 4, 450 nm was used.
+
+An expected result is:
+![alt text](http://url/to/Ex.png)
