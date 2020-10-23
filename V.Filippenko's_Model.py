@@ -157,7 +157,7 @@ while scaleSTOP!='no':
 			plt.plot(ang[j], 0, markersize=1.8*SCALE,fillstyle='none',marker='o',c='black',label='Split')
 	ax.set_ylabel('$\Delta R (arcsec)$',fontsize=30); ax.set_xlabel('Z [deg]',fontsize=30)
 	plt.title('Atmospheric dispersion on different $\lambda$',fontsize=30)
-	plt.grid(True);
+	plt.grid(True);plt.xlim(left=-10,right=max(ang)+10)
 	plt.text(0,1,'Slit (D=1.8 arsec)',fontsize=20)
 	mng = plt.get_current_fig_manager();mng.resize(*mng.window.maxsize())
 	plt.show() ; plt.close()
