@@ -10,7 +10,7 @@ I have created several functions to modulate the different sections of Alexei V.
 The parameters must be entered : wavelength in nm, pressure in hPa, f (the water vapor pressure ) in hPa, r_0(the coherence length, reflects the turbulent state of the atmosphere) in nm, temperature in degrees Celsius. 
 The program is responsible for entering it in the appropriate units for the equations.  
 
-Instead of using 500 nm as a reference in equation 4, 450 nm was used.
+Instead of using 500 nm as a reference in equation 4 (see http://adsabs.harvard.edu/full/1982PASP...94..715F), 450 nm was used.
 
 An expected result is:
 ![Example](/Ex_figure.png)
