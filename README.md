@@ -4,7 +4,7 @@ Link: http://adsabs.harvard.edu/full/1982PASP...94..715F
 
 This code shows the relative positions of the images of a astronomical source at 350 nm, 500 nm and 920 nm. You can also enter the wavelengths you want in nm and change (inside the code) the value of the atmospheric parameters.
 
-In the second plot: The hollow circle represents the entrance of a 1.8 arsec diameter slit.The dotted line (in different colors for each wavelength) defines the scale of the seeing effect
+In the second plot: The hollow circle represents the entrance of a 1.8 arsec diameter slit. The dotted line (in different colors for each wavelength) defines the scale of the seeing effect
 
 ## CODE INFORMATION
 I have created several functions to modulate the different sections of Alexei V. FIlippenko's article. 
